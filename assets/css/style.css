@@ -1208,8 +1208,9 @@ footer {
 
     .panel {
         background-color: #333333;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 470px;
     }
 
 
@@ -1251,7 +1252,7 @@ footer {
     }
 
     .admin-block {
-        padding-left: 25px;
+        padding-left: 20px;
     }
 
     .admin-block h3 {
@@ -1283,7 +1284,7 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 5px;
+        gap: 15px;
     }
 
     .btn_tovar {
@@ -1304,7 +1305,7 @@ footer {
     }
 
     .user-block {
-        gap: 35px;
+        gap: 31px;
     }
 
     .user-block h6 {
