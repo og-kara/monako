@@ -1,0 +1,1439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1410px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "Manrope-Regular";
+    src: url(..//fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Manrope-Medium";
+    src: url(..//fonts/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Vetrino";
+    src: url(..//fonts/ofont.ru_Vetrino.ttf);
+}
+
+@font-face {
+    font-family: "Manrope-Light";
+    src: url(..//fonts/Manrope-Light.ttf);
+}
+
+@font-face {
+    font-family: "Manrope-SemiBold";
+    src: url(..//fonts/Manrope-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Perpetua";
+    src: url(..//fonts/Perpetua\ Titling\ MT\ Light.ttf);
+}
+
+/* INDEX */
+/* header */
+header {
+    height: 180px;
+}
+
+.header-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+.nav_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.nav_header a {
+    font-family: "Manrope-Regular";
+    font-size: 32px;
+    color: #333333;
+}
+
+.nav_header a:hover {
+    color: #33333365;
+    transition: .9s;
+}
+
+.nav_header a:not(:hover) {
+    transition: .9s;
+}
+
+.burg {
+    display: none;
+}
+
+#burger,
+[for=burger] {
+    display: none;
+}
+
+/* header */
+
+
+/* banner */
+.banner {
+    background: url(..//img/banner/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding-top: 15%;
+}
+
+.banner-block h1 {
+    font-family: "Vetrino";
+    font-size: 90px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* banner */
+
+/* catalog */
+.catalog-block h3 {
+    font-family: "Vetrino";
+    font-size: 60px;
+    color: #333333;
+    padding: 85px 0px 75px 0px;
+    font-weight: 300;
+}
+
+.catalog-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 53px;
+    padding-bottom: 40px;
+}
+
+.catalog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog-card h5 {
+    font-family: "Perpetua";
+    font-size: 40px;
+    font-weight: 200;
+    padding: 5px 0px 10px 0px;
+    color: #333333;
+}
+
+.catalog-card h6 {
+    font-family: "Manrope-Light";
+    font-size: 32px;
+    padding-bottom: 30px;
+    color: #33333372;
+    font-weight: 200;
+}
+
+.catalog-card a {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-family: "Manrope-SemiBold";
+    padding: 10px 148px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.catalog-card a:hover {
+    transition: .9s;
+    background-color: #33333385;
+}
+
+.catalog-card a:not(:hover) {
+    transition: .9s;
+}
+
+/* catalog */
+.str {
+    border: 1px solid #333333;
+    width: 100%;
+    margin: 45px 0px 85px 0px;
+}
+
+/* discount */
+.discount-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 85px;
+
+}
+
+.discount-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount-info h4 {
+    font-size: 60px;
+    font-family: "Vetrino";
+    font-weight: 300;
+    color: #333333;
+}
+
+.discount-info p {
+    font-size: 28px;
+    padding: 35px 0px 50px 0px;
+    font-family: "Manrope-Regular";
+    color: #333333;
+    text-align: center;
+}
+
+.form_discount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0px 130px;
+}
+
+.form_discount input {
+    width: 420px;
+    height: 36px;
+    border: none;
+    font-family: "Manrope-Light";
+    border-bottom: 1px solid #333333;
+}
+
+.form_discount ::placeholder {
+    text-align: center;
+    font-family: "Manrope-Light";
+    font-size: 20px;
+    color: #33333375;
+}
+
+.form_discount a {
+    font-size: 26px;
+    color: #FFFFFF;
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 7px 129px;
+    font-family: "Manrope-SemiBold";
+    margin-top: 10px;
+}
+
+.form_discount a:hover {
+    transition: .9s;
+    background-color: #33333385;
+}
+
+.form_discount a:not(:hover) {
+    transition: .9s;
+}
+
+/* discount */
+
+/* footer */
+footer {
+    background-color: #333333;
+    height: 476px;
+    padding-top: 50px;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: right;
+    padding-top: 15px;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-nav h5,
+.footer-contact h5 {
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+    font-family: "Manrope-Medium";
+    font-weight: 300;
+}
+
+.footer-nav h5 {
+    text-align: center;
+}
+
+.footer-contact h5 {
+    text-align: right;
+}
+
+.nav_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 15px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 15px;
+}
+
+.nav_footer a {
+    color: #FFFFFF;
+    font-size: 26px;
+    font-family: "Manrope-Light";
+}
+
+.contact p {
+    color: #FFFFFF;
+    font-size: 26px;
+    font-family: "Manrope-Light";
+    text-align: right;
+}
+
+.str-footer {
+    border: 0.7px solid #FFFFFF55;
+    width: 100%;
+    margin: 50px 0px 22px 0px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info p {
+    font-size: 17px;
+    font-family: "Manrope-Light";
+    color: #FFFFFF;
+}
+
+@media (max-width:768px) {
+
+    /* header start */
+    .container {
+        max-width: 678px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        padding: 20px 0px;
+    }
+
+    .header-logo {
+        margin-left: -340px;
+    }
+
+    .header-icons,
+    .nav_header,
+    .str-header {
+        display: none;
+    }
+
+    [for=burger] {
+        display: flex;
+        position: fixed;
+        right: 30px;
+        top: 30px;
+        z-index: 100000;
+    }
+
+    [for=burger]::before {
+        content: url(../img/burg.svg);
+        font-size: 25px;
+    }
+
+    .burg {
+        position: fixed;
+        width: 35%;
+        background-color: #FFFFFF;
+        padding: 30px;
+        gap: 15px;
+        top: 30px;
+        right: 0px;
+        flex-direction: column;
+        display: none;
+        z-index: 10000;
+    }
+
+    .burg a {
+        color: #333333;
+        font-size: 23px;
+        font-family: "Manrope-Regular";
+        text-align: right;
+    }
+
+    #burger:checked+[for=burger]+.burg {
+        display: flex;
+        animation: show 0.5s;
+    }
+
+    #burger:checked+[for=burger]::before {
+        content: url(../img/close.svg);
+        font-size: 30px;
+    }
+
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* header */
+
+    /* banner */
+    .banner {
+        height: 70vh;
+        padding-top: 20%;
+    }
+
+    .banner-block h1 {
+        font-size: 50px;
+    }
+
+    /* banner */
+
+    /* catalog */
+    .catalog-block h3 {
+        font-size: 40px;
+        padding: 40px 0px;
+    }
+
+    .catalog-cards {
+        gap: 15px;
+        padding-bottom: 40px;
+    }
+
+    .catalog-card img {
+        width: 216px;
+        height: 258px;
+    }
+
+    .catalog-card h5 {
+        font-size: 21px;
+    }
+
+    .catalog-card h6 {
+        font-size: 17px;
+        padding-bottom: 15px;
+        font-weight: 600;
+    }
+
+    .catalog-card a {
+        padding: 5px 76px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    /* catalog */
+    .str {
+        border: 0.2px solid #333333;
+        width: 100%;
+        margin: 0px 0px 40px 0px;
+    }
+
+    /* discount */
+    .discount-block {
+        padding-bottom: 45px;
+    }
+
+    .discount-foto img {
+        width: 330px;
+        height: 234px;
+    }
+
+    .discount-info h4 {
+        font-size: 30px;
+    }
+
+    .discount-info p {
+        font-size: 14px;
+        padding: 17px 0px 25px 0px;
+    }
+
+    .form_discount {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 0px 60px;
+    }
+
+    .form_discount input {
+        width: 230px;
+        height: 27px;
+        border: none;
+        font-family: "Manrope-Light";
+        border-bottom: 1px solid #333333;
+    }
+
+    .form_discount ::placeholder {
+        text-align: center;
+        font-family: "Manrope-Light";
+        font-size: 14px;
+        color: #33333375;
+    }
+
+    .form_discount a {
+        font-size: 14px;
+        color: #FFFFFF;
+        background-color: #333333;
+        border-radius: 5px;
+        padding: 4px 64px;
+        font-family: "Manrope-SemiBold";
+        margin-top: 5px;
+    }
+
+    /* discount */
+    footer {
+        height: 596px;
+        padding-top: 35px;
+    }
+
+    .footer-icons {
+        justify-content: center;
+        padding: 30px 0px;
+    }
+
+    .footer-logo {
+        padding-bottom: 30px;
+    }
+
+    .footer-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-nav h5,
+    .footer-contact h5 {
+        font-size: 25px;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+        font-family: "Manrope-Medium";
+        font-weight: 400;
+    }
+
+    .footer-contact h5 {
+        text-align: center
+    }
+
+    .nav_footer {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 30px;
+    }
+
+    .contact {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-contact {
+        justify-content: center;
+    }
+
+    .nav_footer a {
+        color: #FFFFFF;
+        font-size: 17px;
+        font-family: "Manrope-Light";
+        font-weight: 200;
+    }
+
+    .contact p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .str-footer {
+        display: none;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .footer-info p {
+        font-size: 17px;
+        font-family: "Manrope-Light";
+        color: #FFFFFF;
+    }
+
+    /* footer */
+
+}
+
+/* INDEX */
+
+/* TOVAR */
+.tovar-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 120px 0px;
+}
+
+.tovar-info {
+    padding-left: 50px;
+}
+
+.tovar-info h3 {
+    font-family: "Perpetua";
+    font-size: 67px;
+    font-weight: 200;
+    color: #333333;
+}
+
+.tovar-info h4 {
+    font-family: "Manrope-Light";
+    font-size: 51px;
+    padding: 35px 0px 55px 0px;
+    color: #33333372;
+    font-weight: 200;
+
+}
+
+.desc h5 {
+    font-family: "Manrope-Regular";
+    font-size: 33px;
+    color: #33333375;
+    font-weight: 300;
+}
+
+.desc h6 {
+    font-family: "Manrope-Regular";
+    font-size: 33px;
+    color: #333333;
+    font-weight: 300;
+}
+
+.desc {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    padding-bottom: 70px;
+}
+
+.tovar-info a {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: "Manrope-SemiBold";
+    padding: 16px 109px;
+    border-radius: 10px;
+}
+
+.tovar-info a:hover {
+    background-color: #33333365;
+    transition: .9s;
+}
+
+.tovar-info a:not(:hover) {
+    transition: .9s;
+}
+
+@media (max-width:768px) {
+
+    /* TOVAR */
+    .tovar-block {
+        padding: 80px 0px;
+    }
+
+    .tovar-info {
+        padding-left: 25px;
+    }
+
+    .tovar-foto img {
+        width: 354px;
+        height: 454px;
+    }
+
+    .tovar-info h3 {
+        font-size: 35px;
+    }
+
+    .tovar-info h4 {
+        font-size: 36px;
+        padding: 25px 0px 35px 0px;
+
+    }
+
+    .desc h5 {
+        font-size: 20px;
+    }
+
+    .desc h6 {
+        font-size: 20px;
+    }
+
+    .desc {
+        gap: 15px;
+    }
+
+    .description {
+        gap: 14px;
+        padding-bottom: 50px;
+    }
+
+    .tovar-info a {
+        font-size: 16px;
+        padding: 8px 70px;
+    }
+
+}
+
+/* TOVAR */
+.str-header {
+    width: 100%;
+    height: 1px;
+    background-color: #333333;
+}
+
+/* LOGIN */
+.login {
+    padding: 145px 0px;
+}
+
+.login-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-block h2 {
+    font-family: "Vetrino";
+    font-size: 50px;
+    text-align: center;
+    color: #333333;
+    padding-bottom: 90px;
+    font-weight: 300;
+}
+
+.form_login input {
+    width: 420px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #333333;
+    font-family: "Manrope-Light";
+}
+
+.form_login ::placeholder {
+    text-align: center;
+    font-family: "Manrope-Light";
+    font-size: 20px;
+    color: #33333385;
+}
+
+.form_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 55px;
+}
+
+.login-block a {
+    background-color: transparent;
+    border-radius: 10px;
+    color: #333333;
+    border: 1px solid #333333;
+    font-size: 20px;
+    font-family: "Vetrino";
+    padding: 14px 170px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.login-block a:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+    transition: .9s;
+}
+
+.login-block a:not(:hover) {
+    transition: .9s;
+}
+
+.login-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.login-info p {
+    font-family: "Manrope-Light";
+    color: #33333385;
+    font-size: 14px;
+
+}
+
+.login-info a {
+    font-family: "Manrope-Light";
+    color: #33333385;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width:768px) {
+
+    /* LOGIN */
+    .login {
+        padding: 100px 0px;
+    }
+
+    .login-block h2 {
+        font-size: 40px;
+        padding-bottom: 70px;
+    }
+
+    .form_login input {
+        width: 380px;
+        height: 35px;
+    }
+
+    .form_login ::placeholder {
+        font-size: 16px;
+    }
+
+    .form_login {
+        gap: 37px;
+        padding-bottom: 43px;
+    }
+
+    .login-block a {
+        font-size: 17px;
+        padding: 14px 160px;
+    }
+
+    .login-info {
+        padding-top: 10px;
+    }
+
+    .login-info p {
+        font-size: 13px;
+    }
+
+    .login-info a {
+        font-size: 13px;
+    }
+}
+
+/* LOGIN */
+
+/* REGIST */
+.regist {
+    padding: 145px 0px;
+}
+
+.regist-block,
+.delete-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.regist-block h2,
+.delete-block h2 {
+    font-family: "Vetrino";
+    font-size: 50px;
+    text-align: center;
+    color: #333333;
+    font-weight: 300;
+}
+
+.regist-block h2 {
+    padding-bottom: 90px;
+}
+
+.form_regist input {
+    font-family: "Manrope-Light";
+    width: 420px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #333333;
+}
+
+.form_regist ::placeholder {
+    text-align: center;
+    font-family: "Manrope-Light";
+    font-size: 20px;
+    color: #33333385;
+}
+
+.form_regist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 55px;
+}
+
+.regist-block a {
+    background-color: transparent;
+    border-radius: 10px;
+    color: #333333;
+    border: 1px solid #333333;
+    font-size: 20px;
+    font-family: "Vetrino";
+    padding: 14px 170px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.regist-block a:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+    transition: .9s;
+}
+
+.regist-block a:not(:hover) {
+    transition: .9s;
+}
+
+.regist-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.regist-info p {
+    font-family: "Manrope-Light";
+    color: #33333385;
+    font-size: 14px;
+
+}
+
+.regist-info a {
+    font-family: "Manrope-Light";
+    color: #33333385;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+
+    /* REGIST */
+    .regist {
+        padding: 100px 0px;
+    }
+
+    .regist-block h2 {
+        font-size: 40px;
+        padding-bottom: 70px;
+    }
+
+    .form_regist input {
+        width: 380px;
+        height: 35px;
+    }
+
+    .form_regist ::placeholder {
+        font-size: 16px;
+    }
+
+    .form_regist {
+        gap: 37px;
+        padding-bottom: 43px;
+    }
+
+    .regist-block a {
+        font-size: 17px;
+        padding: 14px 160px;
+    }
+
+    .regist-info {
+        padding-top: 10px;
+    }
+
+    .regist-info p {
+        font-size: 13px;
+    }
+
+    .regist-info a {
+        font-size: 13px;
+    }
+}
+
+/* REGIST */
+
+/* ADMIN */
+.panel {
+    width: 520px;
+    background-color: #333333;
+    padding-left: 60px;
+}
+
+.panel-block {
+    margin-bottom: 645px;
+}
+
+.panel-logo {
+    padding: 100px 80px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 0px 100px 0px;
+}
+
+.foto {
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    width: 130px;
+    height: 130px;
+}
+
+.profile-info h5 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: "Manrope-Medium";
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+
+.profile-info h6 {
+    font-family: "Manrope-Light";
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 200;
+}
+
+.panel-block a {
+    color: #FFFFFF;
+    font-size: 27px;
+    font-family: "Manrope-Medium";
+}
+
+.admin-block {
+    padding-left: 75px;
+}
+
+.admin-block h3 {
+    text-align: center;
+    font-family: "Vetrino";
+    font-size: 42px;
+    color: #333333;
+    padding: 108px 350px 90px 350px;
+}
+
+.admin {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards {
+    padding-bottom: 75px;
+}
+
+.cards h5,
+.users h5 {
+    color: #333333;
+    font-size: 30px;
+    font-family: "Manrope-Medium";
+    font-weight: 400;
+    padding: 0px 0px 55px 0px;
+}
+
+.card-tovar img {
+    width: 315px;
+    height: 375px;
+}
+
+.card-tovar {
+    border: 0.5px solid #33333345;
+    width: 315px;
+    padding-bottom: 30px;
+}
+
+.cards-tovar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+}
+
+.btn_tovar {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    padding-left: 12px;
+}
+
+.btn_delete a,
+.btn_edit a {
+    padding: 5px 23px;
+    background-color: #333333;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Manrope-Medium";
+}
+
+.card-tovar h6 {
+    font-family: "Perpetua";
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: #333333;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.user-block {
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+}
+
+.user-block h6 {
+    font-family: "Perpetua";
+    font-size: 24px;
+    color: #333333;
+
+}
+
+.user-block p {
+    font-family: "Manrope-Regular";
+    font-size: 21px;
+    color: #333333;
+
+}
+
+.user-block a {
+    text-decoration: underline;
+    color: #333333;
+    font-family: "Manrope-Medium";
+    font-size: 21px;
+}
+
+.list-user {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.admin_exit {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.admin_exit a {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Manrope-Light";
+    padding-bottom: 5px;
+}
+
+@media (max-width:768px) {
+
+    .panel {
+        background-color: #333333;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+
+    .panel-block {
+        margin-bottom: 600px;
+    }
+
+    .panel-logo {
+        padding: 100px 25px 100px 25px;
+    }
+
+    .panel-logo img {
+        width: 120px;
+        height: 22px;
+    }
+
+    .profile {
+        gap: 7px;
+        padding: 0px 0px 45px 0px;
+    }
+
+    .foto {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profile-info h5 {
+        font-size: 13px;
+        padding-bottom: 6px;
+    }
+
+
+    .profile-info h6 {
+        font-size: 12px;
+    }
+
+    .panel-block a {
+        font-size: 16px;
+    }
+
+    .admin-block {
+        padding-left: 25px;
+    }
+
+    .admin-block h3 {
+        font-size: 25px;
+        padding: 108px 0px 60px 0px;
+    }
+
+    .cards {
+        padding-bottom: 40px;
+    }
+
+    .cards h5,
+    .users h5 {
+        font-size: 22px;
+        padding: 0px 0px 15px 0px;
+    }
+
+    .card-tovar img {
+        width: 190px;
+        height: 195px;
+    }
+
+    .card-tovar {
+        width: 190px;
+        padding-bottom: 20px;
+    }
+
+    .cards-tovar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .btn_tovar {
+        gap: 20px;
+        padding-left: 12px;
+    }
+
+    .btn_delete a,
+    .btn_edit a {
+        padding: 3px 10px;
+        font-size: 12px;
+
+    }
+
+    .card-tovar h6 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .user-block {
+        gap: 35px;
+    }
+
+    .user-block h6 {
+        font-size: 15px;
+    }
+
+    .user-block p {
+        font-size: 15px;
+    }
+
+    .user-block a {
+        font-size: 15px;
+    }
+
+    .list-user {
+        gap: 15px;
+        padding-bottom: 35px;
+    }
+
+    .admin_exit {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .admin_exit a {
+        color: #FFFFFF;
+        font-size: 15px;
+        font-family: "Manrope-Light";
+        padding-bottom: 5px;
+    }
+}
+
+/* ADMIN */
+
+/* DELETE */
+.delete {
+    padding: 145px 0px;
+}
+
+.delete-block h2 {
+    padding-bottom: 50px;
+}
+
+.info-delete p {
+    font-size: 20px;
+    font-family: "Manrope-Light";
+    padding-bottom: 50px;
+}
+
+.btn-cancel {
+    border-radius: 10px;
+    padding: 18px 50px;
+    font-size: 24px;
+    background-color: transparent;
+    border: 1px solid #33333365;
+    color: #33333365;
+    font-family: "Vetrino";
+    font-weight: 800;
+}
+
+.btn-delete {
+    border-radius: 10px;
+    padding: 18px 50px;
+    font-size: 24px;
+    background-color: transparent;
+    border: 1px solid #333333;
+    color: #333333;
+    font-family: "Vetrino";
+    font-weight: 800;
+}
+
+.delete-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.btn-cancel:hover {
+    transition: .9s;
+    background-color: #33333365;
+    color: #FFFFFF;
+    border: none;
+}
+
+.btn-delete:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+    border: none;
+    transition: .9s;
+}
+
+.btn-cancel:not(:hover),
+.btn-delete:not(:hover) {
+    transition: .9s;
+}
+
+@media (max-width:768px) {
+
+    /* DELETE */
+    .delete {
+        padding: 100px 0px;
+    }
+
+    .delete-block h2 {
+        font-size: 40px;
+        padding-bottom: 40px;
+    }
+
+    .info-delete p {
+        font-size: 15px;
+        font-family: "Manrope-Light";
+        padding-bottom: 35px;
+    }
+
+    .btn-cancel {
+        padding: 13px 39px;
+        font-size: 18px;
+    }
+
+    .btn-delete {
+        padding: 13px 39px;
+        font-size: 18px;
+    }
+
+    .delete-btn {
+        gap: 37px;
+    }
+
+}
